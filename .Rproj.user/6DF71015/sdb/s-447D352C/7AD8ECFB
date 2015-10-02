@@ -1,0 +1,18 @@
+{
+    "contents" : "load(url(\"http://www.openintro.org/stat/data/kobe.RData\"))\nstr(kobe)\nhead(kobe)\n\n# 3\nkobe_streak = calc_streak(kobe$basket)\nbarplot(table(kobe_streak))\nmedian(kobe_streak)\nsummary(kobe_streak)\n\n# 4\nprop.table(table(kobe$basket))\n\n\noutcomes = c(\"heads\", \"tails\")\nsample(outcomes, size = 1, replace = TRUE)\nsim_fair_coin = sample(outcomes, size = 100, replace = TRUE)\ntable(sim_fair_coin)\nsim_unfair_coin = sample()\n",
+    "created" : 1443071608852.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3637466480",
+    "id" : "7AD8ECFB",
+    "lastKnownWriteTime" : 1443688167,
+    "path" : "~/Dev/DASI/lab2.R",
+    "project_path" : "lab2.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
